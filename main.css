@@ -1,0 +1,164 @@
+body {
+	/*background-color:#A68E86;*/
+	margin:0;
+	margin-top:150px;
+	/*margin-right:50px;
+	margin-left:50px;*/
+	text-align:justify;
+}
+
+nav {
+	height:100px; 
+	font-family:'Amatic SC', bold;
+	position:fixed;
+	background:#F8DCCA;
+	width: 100%;
+	top:0;
+	left:0;
+	text-align:center;
+	font-size:29px;
+	text-decoration: none;
+	line-height: 50px;
+	padding-bottom:30px;
+	border-bottom:dashed 6px;
+
+}
+
+nav a{
+	text-decoration: none;
+}
+nav ul {
+	padding:0;
+
+}
+
+/*Top nav items*/
+
+nav > ul > li{
+	display:inline-block;
+	padding: 0 40px;
+}
+
+nav li {
+	display:inline-block;
+	padding:0 30px;
+	vertical-align: top;
+}
+.current {
+	text-decoration: underline;
+}
+
+section {
+	padding-top:-100px;
+	padding-top:100px;
+	padding-bottom:20px;
+}
+
+section h1{
+	text-align:center;
+	font-family:'Amatic SC', bold;
+	font-size:40px;
+}
+
+
+#home{
+	background-color:#83E8BA;
+	/*padding-top:20px;*/
+}
+
+#about {
+	background-color:#B494A2;
+}
+
+#projects {
+	background-color:#FB9F89;
+}
+
+#resume {
+	background-color:#A80874;
+}
+/*subMenus*/
+
+
+nav ul ul {
+	display:none;
+	position:fixed;
+	/*margin-left:-30px;*/
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul ul li {
+	display:block;
+	vertical-align: top;
+	font-size: 0.8em;
+	margin-left:-12px;
+	list-style-type: none;
+}
+
+.collumns li{
+	display:inline-block;
+}
+
+#menuButton{
+	display:none;
+	position:fixed;
+	color:#9C528B;
+	background:#B9929F;
+	height:30px;
+	width:80px;
+	border-radius: 12px;
+	z-index:1;
+}
+p{
+	padding-left: 80px;
+	padding-right:80px;
+}
+
+
+
+@media (max-width: 768px) {
+
+	nav ul {
+		margin-top:100px;
+		background:#F4CBDD;
+		width:120px;
+		display:none;
+		float:left;
+		margin-left:-20px;
+		font-size: 0.9em;
+		border-radius: 12px;
+		text-align:center;
+	}
+	nav > ul > li {
+		display:block;
+	}
+
+	nav ul ul {
+		position:static;
+	}	
+
+	nav ul ul li{
+		padding:0;
+		font-size: 0.8em;
+		display:none;
+		list-style-type: none;
+	}
+
+	nav{
+		height:0px;
+		width:0px;
+	}
+
+	#menuButton {
+		width:100px;
+		height:100px;
+		display:block;
+		}
+
+	body{
+	margin-top:0px;
+	}
+}
